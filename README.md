@@ -9,5 +9,5 @@ $ pip install -r requirements.txt <br>
 $ sudo python ip.py
 
 # Note
-If you want to view firewall rules :
+If you want to view firewall rules : <br>
 $ sudo iptables --list
