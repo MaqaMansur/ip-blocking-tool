@@ -7,3 +7,7 @@ $ git clone https://github.com/MaqaMansur/ip-blocking-tool/ <br>
 $ cd ip-blocking-tool <br>
 $ pip install -r requirements.txt <br>
 $ sudo python ip.py
+
+# Note
+If you want to view firewall rules :
+$ sudo iptables --list
