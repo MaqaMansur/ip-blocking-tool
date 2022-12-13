@@ -1,4 +1,4 @@
-# ip-blocking-tool
+# Simple IP blocking tool
 Block and allow IP for incoming/outgoing traffic on Linux <br>
 It is recommended to run the tool as a sudo user.
 
