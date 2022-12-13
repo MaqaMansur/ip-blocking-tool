@@ -22,12 +22,12 @@ if __name__ == '__main__':
     if choice == "3":
         subprocess.run(["iptables","-D","INPUT","-s",IP+'/32',"-j","DROP"])
         #subprocess.run(["service", "iptables", "save"])
-        print("\nThe IP allowed successfully for incoming traffic !")
+        print("\nThe IP allowed successfully for incoming traffic !\n")
     
     elif choice == "4":
         subprocess.run(["iptables","-D","OUTPUT","-d",IP,"-j","DROP"])
         #subprocess.run(["service", "iptables", "save"])
-        print("\nThe IP allowed successfully for outgoing traffic !")
+        print("\nThe IP allowed successfully for outgoing traffic !\n")
 
     elif scanner[host].state() == "up":
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
             """
             #else:
             #subprocess.run(["service", "iptables", "save"])
-            print("\nThe IP blocked successfully for incoming traffic !")
+            print("\nThe IP blocked successfully for incoming traffic !\n")
 
         elif choice == "2":
             subprocess.run(["iptables","-I","OUTPUT","-d",IP,"-j","DROP"])
@@ -49,13 +49,13 @@ if __name__ == '__main__':
             """
             #else:
             #subprocess.run(["service", "iptables", "save"])
-            print("\nThe IP blocked successfully for outgoing traffic !")
+            print("\nThe IP blocked successfully for outgoing traffic !\n")
     
         else:
             print("\nPlease, enter an available choice")
 
     elif scanner[host].state() == "down":
-        print("\nThe IP is down, so you don't need to block it :)")
+        print("\nThe IP is down, so you don't need to block it :)\n")
 
     else:
-        print("\nPlease, enter the correct IP")
+        print("\nPlease, enter the correct IP\n")
