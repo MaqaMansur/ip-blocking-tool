@@ -1,0 +1,5 @@
+gi
+subprocess
+socket
+Gtk
+Notify
